@@ -1,0 +1,418 @@
+html, body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+body {
+    background-color: #F4F4F4;
+    color: #464648;
+    font-family: "Merriweather Sans", sans-serif;
+    padding: 0;
+    width: 100vw;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Merriweather", serif;
+    color: #212121;
+    padding-left: 0.2rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2rem;
+    width: 100%;
+}
+
+.navbar .links {
+    padding-right: 3rem;
+}
+
+.navbar .links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .links li {
+    list-style: none;
+}
+
+.navbar .links li a {
+    color: #464648;
+    text-decoration: none;
+    padding: 1rem;
+    transition: color .2s ease;
+}
+
+.navbar .links li a:hover {
+    color: #5199C9;
+}
+
+#hero {
+    background-color: #212121;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    width: 100vw;
+}
+
+#hero h2 {
+    color: #F4F4F4;
+    font-size: 3rem;
+    letter-spacing: .08rem;
+    word-spacing: .75rem;
+    line-height: 0.75;
+}
+
+#hero .magic {
+    font-family: "Yeseva One", serif;
+    font-size: 5rem;
+    letter-spacing: -.8rem;
+}
+
+#hero .magic .m {
+    color: #8DB6B0;
+}
+
+#hero .magic .a {
+    color: #D8938E;
+}
+
+#hero .magic .g {
+    color: #E8CEB5;
+}
+
+#hero .magic .i {
+    color: #F1E26B;
+}
+
+#hero .magic .c {
+    color: #A4B69D;
+}
+
+#hero .button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+#hero .button-container button {
+    background-color: #E34544;
+    padding: 1.5rem 3rem;
+    color: #F4F4F4;
+    font-family: "Merriweather Sans", sans-serif;
+    letter-spacing: .15rem;
+    border-radius: 3rem;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 2px 2px 2px black;
+    transition: background-color .2s ease, color .2s ease;
+}
+
+#hero .button-container button:hover {
+    color: #E34544;
+    background-color: #F4F4F4;
+    cursor: pointer;
+}
+
+#hero img {
+    width: 40%;
+    object-fit: cover;
+}
+
+#features {
+    display: flex;
+    justify-content: space-around;
+    margin: 6rem 0;
+}
+
+#features .card {
+    width: 300px;
+    height: 300px;
+    border-radius: .15rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+}
+
+#features .card .description {
+    background-color: #212121;
+    color: #F4F4F4;
+    height: 70%;
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#features .card .description p {
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+#features .prints {
+    background-color: #8db6b0;
+    transform: rotate(5deg);
+}
+
+#features .flash {
+    background-color: #E8CEB5;
+    transform: rotate(-4deg);
+}
+
+#features .design {
+    background-color: #D8938E;
+    transform: rotate(2.5deg);
+}
+
+#testimonial {
+    background-color: #C8A8D8;
+    padding: 6rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+}
+
+#testimonial em {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+#testimonial cite {
+    padding: 2.5rem 0 0 2.5rem;
+    display: block;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+#pricing h3 {
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+#pricing .products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 3rem;
+    text-align: center;
+}
+
+#pricing .products .card {
+    padding: 2rem;
+}
+
+#pricing .products .card img {
+    width: 200px;
+}
+
+#pricing .products .card span {
+    display: block;
+}
+
+#pricing .products .card button {
+    background-color: #E34544;
+    padding: .5rem 1.5rem;
+    color: #F4F4F4;
+    font-family: "Merriweather Sans", sans-serif;
+    letter-spacing: .15rem;
+    border-radius: 3rem;
+    font-size: .75rem;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    transition: background-color .2s ease, color .2s ease;
+    margin-top: 2rem;
+}
+
+#pricing .products .card button:hover {
+    background-color: #F4F4F4;
+    color: #e34544;
+    cursor: pointer;
+}
+
+#connect {
+    background-color: #212121;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#connect img {
+    height: 25px;
+    width: 25px;
+    padding: 1rem;
+}
+
+#connect a {
+    transition: transform .2s ease;
+}
+
+#connect a:hover {
+    transform: scale(1.10);
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #hero {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    #hero .hero-text {
+        margin: 6rem 0;
+    }
+
+    #hero h2 {
+        font-size: 1.9rem;
+    }
+    
+    #hero .magic {
+        font-size: 3.8rem;
+    }
+    
+    #hero .button-container button {
+        padding: 2rem 3rem;
+    }
+
+    #hero img {
+        width: 100vw;
+        max-height: 40vh;
+    }
+
+    #features {
+        flex-wrap: wrap;
+    }
+
+
+    #pricing .products {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #hero {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    #hero .hero-text {
+        margin: 6rem 0;
+    }
+
+    #hero h2 {
+        font-size: 1.9rem;
+    }
+    
+    #hero .magic {
+        font-size: 3.8rem;
+    }
+    
+    #hero .button-container button {
+        padding: 2rem 3rem;
+    }
+
+    #hero img {
+        width: 100vw;
+        max-height: 40vh;
+    }
+
+    #features {
+        flex-wrap: wrap;
+    }
+
+    #pricing .products {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .navbar {
+        flex-direction: row;
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .navbar .links ul {
+        flex-direction: column;
+        line-height: 2.5;
+        padding-right: 2rem;
+    }
+
+    #hero {
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 3em;
+        padding: 0;
+    }
+
+    #hero .hero-text {
+        margin: 6rem 0;
+    }
+
+    #hero h2 {
+        font-size: 1.25rem;
+    }
+    
+    #hero .magic {
+        font-size: 3rem;
+    }
+    
+    #hero .button-container button {
+        padding: 1rem 1rem;
+    }
+
+    #hero img {
+        width: 100vw;
+        max-height: 40vh;
+    }
+
+    #testimonial {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+
+    #testimonial cite {
+        font-size: 0.75rem;
+    }
+
+    #features {
+        flex-wrap: wrap;
+    }
+
+    #pricing {
+        text-align: center;
+        margin: 0 1rem;
+    }
+
+    #pricing .products {
+        flex-wrap: wrap;
+    }
+}
+
